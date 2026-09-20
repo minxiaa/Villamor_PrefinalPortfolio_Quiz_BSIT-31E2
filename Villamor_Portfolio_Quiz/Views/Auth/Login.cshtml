@@ -1,19 +1,28 @@
 ﻿@using (Html.BeginForm("Login", "Account", FormMethod.Post))
 {
-    <div>
-        <label>Username</label>
-        <input type="text" name="username" />
+    <div class="container">
+
+        <div class="card h-100 shadow-sm border-0">
+            <img src="~/images/bow.png" width="100" height="100" />
+            <h1 class="display-4">Login ᓚ₍ ^..^₎</h1>
+            
+            <div class="username">
+                <label>Username</label>
+                <input type="text" name="username" />
+            </div>
+
+            <div class="password">
+                <label>Password</label>
+                <input type="password" name="password" />
+            </div>
+
+            <button class="buttonowo" type="submit">Login</button>
+            
+
+            @if (ViewBag.Error != null)
+            {
+                <p>@ViewBag.Error</p>
+            }
+        </div>
     </div>
-
-    <div>
-        <label>Password</label>
-        <input type="password" name="password" />
-    </div>
-
-    <button type="submit">Login</button>
-
-    @if (ViewBag.Error != null)
-    {
-        <p>@ViewBag.Error</p>
-    }
 }

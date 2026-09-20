@@ -32,6 +32,20 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+}
+
+.username{
+    margin-bottom: 30px;
+    
+}
+
+.password {
+    margin-bottom: 30px;
+}
+
+.container{
+    align-content:center;
 }
 
 .card-container {
@@ -50,11 +64,18 @@ body {
     background-image: url('/images/strawbcake.jpg');
     background-size: cover;
     background-position: center;
-    color: #6b3030;
+    color: #904474;
+    font-family: 'Palace Script MT';
+    
+    
 }
 
+.formattingahh{
+    padding: 20px;
+   
+}
 .card2 {
-    background-color: antiquewhite;
+    background-color: #fff4ee;
 }
 
 .display-4 {
@@ -90,10 +111,16 @@ body {
     max-width: 100px;
 }
 
-.buttonowo{
-   background-color: lightpink;
-   border-radius: 25px;
-   color: #723051;
-   font-weight: bold;
-   letter-spacing: 5px;
+.buttonowo {
+    background-color: lightpink;
+    border-radius: 25px;
+    color: #723051;
+    font-weight: bold;
+    letter-spacing: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: 200px;
 }

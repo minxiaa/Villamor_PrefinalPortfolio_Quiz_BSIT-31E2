@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Details Page";
+}
+
+<div class="container">
+
+    <div class="card2 h-100 shadow-sm border-0">
+
+        <div class="image-container">
+            <img class="bow" src="/images/bow.png" />
+        </div>
+        <div class="designtypesheet">
+            <h1 class="display-4">Hi this is my portfolio... Or something ᓚ₍ ^..^₎</h1>
+            <p class="descriptionahh">My name is Clarisse Anne P. Villamor from BSIT-31E2. These are the projects I have done thus far for the First Semester on our Web System and Technologies subject.</p>
+        </div>
+
+    
+
+        <div class="card-container">
+        
+
+        <div class="card h-100 shadow-sm border-0">
+            <img class="pics" src="/images/PrelimAct3.png" />
+            <h2>Prelim Activity 3</h2>
+            <p>BSIT31E2-PRELIM-A3-VILLAMOR-CLARISSE</p>
+            <p>This is the third project for our Prelim term. It is an Http Client Starter. </p>
+
+            <a href="https://github.com/minxiaa/BSIT31E2-PRELIM-A3-VILLAMOR-CLARISSE.git"
+               class="buttonowo"
+               target="_blank">
+                View
+            </a>
+
+            <a href="/Home/Index" class="buttonowo">Back</a>
+        </div>
+            <div class="card h-100 shadow-sm border-0">
+                @await Html.PartialAsync("_Comments", new CommentViewModel
+                {
+                    ProjectName = "Prelim Activity 3",
+                    ActionName = "PrelimAct3"
+                })
+
+
+            </div>
+          
+
+        </div>
+       
+    </div>
+</div>

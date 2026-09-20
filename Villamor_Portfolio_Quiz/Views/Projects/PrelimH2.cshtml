@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Details Page";
+}
+
+<div class="container">
+
+    <div class="card2 h-100 shadow-sm border-0">
+
+        <div class="image-container">
+            <img class="bow" src="/images/bow.png" />
+        </div>
+        <div class="designtypesheet">
+            <h1 class="display-4">Hi this is my portfolio... Or something ᓚ₍ ^..^₎</h1>
+            <p class="descriptionahh">My name is Clarisse Anne P. Villamor from BSIT-31E2. These are the projects I have done thus far for the First Semester on our Web System and Technologies subject.</p>
+        </div>
+
+    
+
+        <div class="card-container">
+        
+
+        <div class="card h-100 shadow-sm border-0">
+            <img class="pics" src="/images/PrelimH2.png" />
+            <h2>Prelim Homework 2</h2>
+            <p>BSIT31E2_PRELIM_H2_Villamor_Clarisse</p>
+            <p>This is the second homework assignment for our Prelim term. It is a File Ingestion Engine app that processes file types like .txt, .json, .csv, and .xml, allowing the app to print an output depending on their content.. </p>
+
+            <a href="https://github.com/minxiaa/BSIT31E2_PRELIM_H2_Villamor_Clarisse.git"
+               class="buttonowo"
+               target="_blank">
+                View
+            </a>
+
+            <a href="/Home/Index" class="buttonowo">Back</a>
+        </div>
+
+            <div class="card h-100 shadow-sm border-0">
+                @await Html.PartialAsync("_Comments", new CommentViewModel
+                {
+                    ProjectName = "Prelim Homework 2",
+                    ActionName = "PrelimH2"
+                })
+
+
+            </div>
+
+          
+        </div>
+    </div>
+</div>

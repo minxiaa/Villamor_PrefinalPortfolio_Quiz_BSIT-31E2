@@ -1,0 +1,60 @@
+﻿@model CommentViewModel
+
+            <div class="comments-section">
+
+                <h2>Comments</h2>
+
+        <form asp-controller="Comments"
+              asp-action="Add"
+              method="post">
+
+            <input type="hidden"
+                   name="projectName"
+                   value="@Model.ProjectName" />
+
+            <input type="hidden"
+                   name="actionName"
+                   value="@Model.ActionName" />
+            <div class="formattingahh">
+            <input  type="text"
+                   name="name"
+                   placeholder="Your name"
+                   required />
+            </div>
+
+            <div class="formattingahh">
+            <textarea class="username" name="text"
+                      placeholder="Write a comment..."
+                      required></textarea>
+
+            <div class="formattingahh">
+            <button type="submit" class="buttonowo">
+                Post Comment
+            </button>
+            </div>
+        </div>
+
+        </form>
+
+                <div class="comments-list">
+
+                    @foreach (var comment in CommentStore.Comments
+                        .Where(c => c.ProjectName == Model.ProjectName))
+                    {
+                        <div class="comment">
+
+                            <strong>@comment.Name</strong>
+
+                            <p>@comment.Text</p>
+
+                            <small>
+                                @comment.DatePosted.ToString("MMM dd, yyyy hh:mm tt")
+                            </small>
+
+                        </div>
+                    }
+
+                </div>
+
+         </div>
+
