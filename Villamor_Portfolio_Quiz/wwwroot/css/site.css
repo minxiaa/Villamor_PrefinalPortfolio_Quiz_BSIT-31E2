@@ -1,0 +1,99 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+body {
+    background-image: url('/images/strawberries.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    gap: 20px;
+    padding-bottom: 60px;
+}
+
+.card {
+    padding: 50px;
+    max-width: 600px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-image: url('/images/strawbcake.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #6b3030;
+}
+
+.card2 {
+    background-color: antiquewhite;
+}
+
+.display-4 {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Palace Script MT';
+    color: #804141;
+    border-bottom: solid;
+}
+
+.descriptionahh {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Palace Script MT';
+    color: #804141;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.bow{
+    margin-top: 25px;
+    max-width: 100px;
+}
+
+.buttonowo{
+   background-color: lightpink;
+   border-radius: 25px;
+   color: #723051;
+   font-weight: bold;
+   letter-spacing: 5px;
+}
